@@ -25,13 +25,6 @@ public class CustomerServiceApplication {
                         .build());
 
             });
-
         };
-
-
 }
-
-
-
-
 }

@@ -13,7 +13,7 @@ public class CustomerRestController {
     public CustomerRestController(CustomerService customerService) {
         this.customerService = customerService;
     }
-@GetMapping("/customers")
+    @GetMapping("/customers")
     public List<Customer> getAllCustomers(){
         return customerService.getAllCustomers();
     }
@@ -21,7 +21,7 @@ public class CustomerRestController {
     public Customer findCustomerById(@PathVariable Long id){
         return customerService.findCustomerById(id);
     }
-@PostMapping("/customer")
+    @PostMapping("/customer")
     public Customer saveCustomer(@RequestBody Customer customer){
         return customerService.saveCustomer(customer);
     }
